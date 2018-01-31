@@ -13,11 +13,11 @@ import sys, re
 #
 #    ANSWER = LETTER + ALPHANUM + "*"
 
-ANSWER = r'REPLACE WITH YOUR SOLUTION TO THIS PROBLEM'
+ANSWER = r'[a][^bcdef]*[b][^cdef]*[c][^def]*[d][^ef]*[e][^f]*[f]'
 
 # Restrictions: Besides ordinary characters (which stand for themselves),
 #     ANSWER must use only the constructs [...], *, +, |, ^, $, (...), ?,
-#     and . 
+#     and .
 
 
 # To test your solution, put the inputs to be tested, one to a

@@ -13,11 +13,11 @@ import sys, re
 #
 #    ANSWER = LETTER + ALPHANUM + "*"
 
-ANSWER = r'REPLACE WITH YOUR SOLUTION TO THIS PROBLEM'
+ANSWER = r'[01][^01?][0(1?)]+[0(1?)]+'
 
 # Restrictions: Besides ordinary characters (which stand for themselves),
 #     ANSWER must use only the constructs [...], *, +, |, ^, $, (...), ?,
-#     and . 
+#     and .
 
 
 # To test your solution, put the inputs to be tested, one to a
@@ -53,11 +53,11 @@ while line:
 
     try:
         if re.match (ANSWER, line):
-            print 'Input "%s" accepted.' % line
+            print ('Input "%s" accepted.', line)
         else:
-            print 'Input "%s" rejected.' % line
+            print ('Input "%s" rejected.', line)
     except:
-        print 'Error in regular expression:', ANSWER
+        print ('Error in regular expression:', ANSWER)
         sys.exit (1)
 
     line = inp.readline ()

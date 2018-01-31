@@ -1,4 +1,4 @@
-/* Template for HW1, problem #4a 
+/* Template for HW1, problem #4a
 
  * The makefile has instructions for turning these templates into
  * executables.  Just use the command 'make' in this directory.
@@ -32,7 +32,12 @@
 
 
  /* REPLACE WITH YOUR SOLUTION */
-ANSWER : ;
+ANSWER :
+  V = {0, 1};
+  T = {S0, S1, S2, S3, S4, S5}
+  S = 0S | S1 | e
+  P = S0 > 0S | S1 | e, S1 > 0S3, S2 > 1S3, S3 > 0S5 | S5, S4 > 0 | 1 | e,
+    S > 0;
 
 
 /* End of grammar */
@@ -49,7 +54,7 @@ yylex()
 {
   while (1) {
     int c = getchar();
-    if (c == EOF) 
+    if (c == EOF)
       return 0;
     else if (c == '0' || c == '1')
       return c;
@@ -81,4 +86,3 @@ main(int argc, char* argv[])
   fprintf(stderr, "The input is in the language.\n");
   exit(0);
 }
-

@@ -1,12 +1,19 @@
 CS164 Homework #1, Spring 2015
 
 
+
 1. 
 
 
+2^n and (n(n+1))/2 + 1
 2. 
- a.
- b.
- c.
- d.
- e.
+a.
+ Any binary number starting and ending with 0
+b. The set of string from {0, 1}
+ 
+c.
+ any 3 digit binary or higher, the last three digits have to start with a leading 0.
+d.
+ at least 3 1's in a string. 
+e.
+ any string, since we have * and the empty string would be matched.

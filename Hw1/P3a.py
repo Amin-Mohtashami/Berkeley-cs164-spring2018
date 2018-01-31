@@ -1,4 +1,4 @@
-# Simple template for HW1, problem #3a 
+# Simple template for HW1, problem #3a
 
 import sys, re
 
@@ -13,11 +13,11 @@ import sys, re
 #
 #    ANSWER = LETTER + ALPHANUM + "*"
 
-ANSWER = r'REPLACE WITH YOUR SOLUTION TO THIS PROBLEM'
+ANSWER = r'[a][^aeiouy]*[e][^aeiouy]*[i][^aeiouy]*[o][^aeiouy]*[u][^aeiouy]*[y][^aeiouy]*$'
 
 # Restrictions: Besides ordinary characters (which stand for themselves),
 #     ANSWER must use only the constructs [...], *, +, |, ^, $, (...), ?,
-#     and . 
+#     and .
 
 
 # To test your solution, put the inputs to be tested, one to a

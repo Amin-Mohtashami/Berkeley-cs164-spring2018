@@ -32,7 +32,12 @@
 
 
  /* REPLACE WITH YOUR SOLUTION */
-ANSWER : ;
+ANSWER :
+V = {00, 11, 01, 10};
+T = {S1, S2, S3, S4, S5, S6}
+S = 00 | 11 | e
+P = S1 > 00 | 11 | e, S2 > S3 | e, S3 > 01 | 10, S4 > 00 | 11 | 1e,
+S5 > 01 | 10, S6 > 00 | 11 | e;
 
 
 /* End of grammar */
@@ -49,7 +54,7 @@ yylex()
 {
   while (1) {
     int c = getchar();
-    if (c == EOF) 
+    if (c == EOF)
       return 0;
     else if (c == '0' || c == '1')
       return c;
@@ -81,4 +86,3 @@ main(int argc, char* argv[])
   fprintf(stderr, "The input is in the language.\n");
   exit(0);
 }
-
